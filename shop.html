@@ -631,12 +631,44 @@
                         <div class="pagination poduct_pagination">
                             <ul>
                                 <li class="current"><span>1</span></li>
-                                <li class="list2"><span><a href="#list2">2</a></span></li> 
+                                <li><span><a href="#list2">2</a></span></li> 
                                 <li><a href="#">3</a></li>
                                 <li class="next"><a href="#"><i class="ion-chevron-right"></i></a></li>
                             </ul>
                         </div>
                         <!--shop gallery end-->
+                        <!-- <script>
+                            document.addEventListener("DOMContentLoaded", function () {
+                                // Get all pagination links
+                                const paginationLinks = document.querySelectorAll('.pagination a');
+
+                                // Add click event listeners to each pagination link
+                                paginationLinks.forEach(link => {
+                                    link.addEventListener('click', function (event) {
+                                        event.preventDefault(); // Prevent default link behavior
+
+                                        // Check if list__product class is present
+                                        if (document.querySelector('.list__product')) {
+                                            // Get the href attribute of the clicked link
+                                            const targetId = this.getAttribute('href');
+
+                                            // Hide all tab content
+                                            const tabContents = document.querySelectorAll('.tab-pane');
+                                            tabContents.forEach(content => {
+                                                content.classList.remove('show', 'active');
+                                            });
+
+                                            // Show the tab content corresponding to the clicked link
+                                            const targetTab = document.querySelector(targetId);
+                                            targetTab.classList.add('show', 'active');
+                                        }
+                                        else{
+                                            console.log('.list__product class not found');
+                                        }
+                                    });
+                                });
+                            });
+                        </script> -->
                     </div>
                 </div>
             </div>
@@ -759,24 +791,24 @@
                                     <div class="tab-content product-details-large">
                                         <div class="tab-pane fade show active" id="tab1" role="tabpanel">
                                             <div class="modal_tab_img">
-                                                <a href="single-product.html"><img src="assets/img/product/product1.png"
+                                                <a href="product-1.html"><img src="assets/img/product/product1.jpg"
                                                         alt=""></a>
                                             </div>
                                         </div>
                                         <div class="tab-pane fade" id="tab2" role="tabpanel">
                                             <div class="modal_tab_img">
-                                                <a href="single-product.html"><img src="assets/img/product/product2.png"
+                                                <a href="product-1.html"><img src="assets/img/product/product2.jpg"
                                                         alt=""></a>
                                             </div>
                                         </div>
                                         <div class="tab-pane fade" id="tab3" role="tabpanel">
                                             <div class="modal_tab_img">
-                                                <a href="#"><img src="assets/img/product/product3.png" alt=""></a>
+                                                <a href="#"><img src="assets/img/product/product3.jpg" alt=""></a>
                                             </div>
                                         </div>
                                         <div class="tab-pane fade" id="tab4" role="tabpanel">
                                             <div class="modal_tab_img">
-                                                <a href="#"><img src="assets/img/product/product4.png" alt=""></a>
+                                                <a href="#"><img src="assets/img/product/product4.jpg" alt=""></a>
                                             </div>
                                         </div>
                                     </div>
@@ -785,22 +817,22 @@
                                             <li>
                                                 <a class="nav-link active" data-toggle="tab" href="#tab1" role="tab"
                                                     aria-controls="tab1" aria-selected="false"><img
-                                                        src="assets/img/product/mini-product/product1.png" alt=""></a>
+                                                        src="assets/img/product/product1.jpg" alt=""></a>
                                             </li>
                                             <li>
                                                 <a class="nav-link" data-toggle="tab" href="#tab2" role="tab"
                                                     aria-controls="tab2" aria-selected="false"><img
-                                                        src="assets/img/product/mini-product/product2.png" alt=""></a>
+                                                        src="assets/img/product/product2.jpg" alt=""></a>
                                             </li>
                                             <li>
                                                 <a class="nav-link button_three" data-toggle="tab" href="#tab3" role="tab"
                                                     aria-controls="tab3" aria-selected="false"><img
-                                                        src="assets/img/product/mini-product/product3.png" alt=""></a>
+                                                        src="assets/img/product/product3.jpg" alt=""></a>
                                             </li>
                                             <li>
                                                 <a class="nav-link" data-toggle="tab" href="#tab4" role="tab"
                                                     aria-controls="tab4" aria-selected="false"><img
-                                                        src="assets/img/product/mini-product/product4.png" alt=""></a>
+                                                        src="assets/img/product/product4.jpg" alt=""></a>
                                             </li>
     
                                         </ul>
@@ -810,11 +842,7 @@
                             <div class="col-lg-7 col-md-7 col-sm-12">
                                 <div class="modal_right">
                                     <div class="modal_title mb-10">
-                                        <h2>Donec Ac Tempus</h2>
-                                    </div>
-                                    <div class="modal_price mb-10">
-                                        <span class="new_price">$64.99</span>
-                                        <span class="old_price">$78.99</span>
+                                        <h2>Product Name</h2>
                                     </div>
                                     <div class="modal_description mb-15">
                                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -898,7 +926,4 @@
 
 
 </body>
-
-
-<!-- Mirrored from template.hasthemes.com/bucker/bucker/shop.html by HTTrack Website Copier/3.x [XR&CO'2017], Sun, 25 Feb 2024 03:43:40 GMT -->
 </html>
